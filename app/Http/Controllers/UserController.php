@@ -8,7 +8,12 @@ class UserController extends Controller
 {
     //
     public function index(){
-        return view('welcome');
+        if(auth()->check()){
+            return view('moneo.dashboard');
+        } else {
+            return view('welcome');
+        }
+        
     }
 
 

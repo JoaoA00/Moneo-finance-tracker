@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Header */
+
+nav {
+    height: 40px;
+    display: flex;
+    padding: 30px;
+}
+
+.header-itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-navigation ul,
+.login-register ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+
+
+.header-logo img {
+    height: 40px;
+}
+
+.header-navigation a,
+.login-register a {
+    text-decoration: none;
+    color: black;
+}
+
+.login-register ul{
+    gap: 10px;
+}
+
+.login-register .login-btn {
+    background-color: #B17457;
+    color: white;
+}
+
+.login-register .register-btn {
+    color: #B17457;
+}
+
+
+
+
+
