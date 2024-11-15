@@ -21,4 +21,10 @@ class UserController extends Controller
         return view('moneo.dashboard');
     }
 
+    public function profile(){
+        $user = auth()->user();
+        
+        return view('profile.show', ['user' => $user]);
+    }
+
 }

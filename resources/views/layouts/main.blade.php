@@ -15,6 +15,7 @@
         <nav>
             <div class="header-pages">
                 <ul>
+                    <li><a href="/dashboard">Dashboard</a></li>
                     <li><a href="#">Transações</a></li>
                     <li><a href="#">Relatório</a></li>
                     <li><a href="#">Recorrências</a></li>
@@ -24,7 +25,7 @@
             </div>
             <div class="right-itens">
                 <div class="user-profile">
-                    <a href="">
+                    <a href="/profile">
                         <img src="/img/logo.png" alt="">
                     </a>
                 </div>
