@@ -1,7 +1,10 @@
 body {
     margin: 0;  
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* header */
 
 nav {
     display: flex;
@@ -27,9 +30,72 @@ nav {
     border-radius: 50%;
 }
 
-.header-pages a {
+a {
     text-decoration: none;
     color: white;
 }
 
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
 
+.right-itens {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* dashboard */
+
+.content {
+    margin: 50px 5vw;
+    height: calc(100vh - 50px - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.top-boxes .box {
+    background-color: #FAF7F0;
+    border-radius: 8px;
+    flex-grow: 1;
+    min-height: 120px;
+    min-width: 200px;
+}
+
+.dashboard-data {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+.finalcial-graph {
+    flex-grow: 3;
+    border-radius: 8px;
+    background-color: #FAF7F0;
+}
+
+.expenses {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between; 
+}
+
+.expenses .recent-expenses,
+.expenses .fixed-expenses {
+    border-radius: 8px;
+    flex-grow: 1;
+    background-color: #FAF7F0;
+}
