@@ -16,7 +16,7 @@
             <div class="header-pages">
                 <ul>
                     <li><a href="/dashboard">Dashboard</a></li>
-                    <li><a href="#">Transações</a></li>
+                    <li><a href="/transactions">Transações</a></li>
                     <li><a href="#">Relatório</a></li>
                     <li><a href="#">Recorrências</a></li>
                     <li><a href="#">Investimentos</a></li>
@@ -45,9 +45,9 @@
         </nav>
     </header>
     <main>
-        <div class="content">
-            @yield('content')
-        </div>
+
+        @yield('content')    
+
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

@@ -4,22 +4,24 @@
 
 @section('content')
 
-<div class="top-boxes">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-</div>
-<div class="dashboard-data">
-    <div class="finalcial-graph">
-        
+<div class="dashboard-content">
+    <div class="top-boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
-    <div class="expenses">
-        <div class="recent-expenses">
+    <div class="dashboard-data">
+        <div class="finalcial-graph">
             
         </div>
-        <div class="fixed-expenses">
-            
+        <div class="expenses">
+            <div class="recent-expenses">
+                
+            </div>
+            <div class="fixed-expenses">
+                
+            </div>
         </div>
     </div>
 </div>
