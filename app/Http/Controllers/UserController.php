@@ -25,6 +25,10 @@ class UserController extends Controller
         return view('moneo.transactions');
     }
 
+    public function addTransaction(){
+        return view('moneo.add-transaction');
+    }
+
     public function profile(){
         $user = auth()->user();
         

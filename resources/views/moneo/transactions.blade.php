@@ -11,7 +11,7 @@
     <table>
         <thead>
             <tr>
-                <th class="column-date">Data</th>
+                <th class="column-date">Pagamento</th>
                 <th class="column-description">Descrição</th>
                 <th class="column-value">Valor</th>
                 <th class="column-category">Categoria</th>
@@ -37,6 +37,8 @@
 
         </tbody>
     </table>
+
+    <a href="/add-transaction" class="">Adicionar Transação</a>
 
 </div>
 

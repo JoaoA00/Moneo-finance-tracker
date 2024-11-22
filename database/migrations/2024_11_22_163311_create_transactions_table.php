@@ -18,9 +18,9 @@ return new class extends Migration
             $table->text('description');
             $table->decimal('value', 10, 2);
             $table->json('category');
-            $table->string('type');
-            $table->json('payment');
-            $table->json('status');
+            $table->enum('type', ['RECEITA', 'DESPESA', 'INVESTIMENTO']);
+            $table->string('payment');
+            $table->enum('status', ['PAGO', 'PAGANDO', 'PAGAR']);
             $table->string('proof');
             $table->text('note');
         });
