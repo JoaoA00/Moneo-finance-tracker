@@ -21,19 +21,6 @@ class TransactionsController extends Controller
             'note' => 'nullable|string',
         ]);
 
-        /*
-        $transactions = new Transaction();
-        
-        $transactions->description = $request->description;
-        $transactions->date = $request->date;
-        $transactions->value = $request->value;
-        $transactions->type = $request->type;
-        $transactions->status = $request->status;
-        $transactions->payment = $request->payment;
-        $transactions->category = $request->category;
-        $transactions->note = $request->note;
-        */
-
         $validatedData['category'] = json_encode([$validatedData['category']]);
 
         if($request->hasFile('proof') && $request->file('proof')->isValid()){
@@ -53,5 +40,12 @@ class TransactionsController extends Controller
         Transaction::create($validatedData);
 
         return redirect('/transactions')->with('success', 'Transação adicionada');
+    }
+
+    public function show(){
+
+        $transactions = Transaction::all();
+
+        return view('moneo.transactions', ['transactions' => $transactions]);
     }
 }
