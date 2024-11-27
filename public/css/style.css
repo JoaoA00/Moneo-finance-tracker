@@ -1,0 +1,24 @@
+
+/* landing-page navigation btn efect*/
+
+.btn-hover-line {
+    position: relative;
+    text-decoration: none; 
+}
+
+/* Linha inicial (oculta) */
+.btn-hover-line::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #D99F59;
+    transition: width 0.3s ease; 
+}
+
+/* Efeito no hover */
+.btn-hover-line:hover::after {
+    width: 100%; 
+}
