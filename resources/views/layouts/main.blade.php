@@ -19,7 +19,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-dark">
-            <div class="container-fluid">
+            <div class="container">
                 <a href="/" class="navbar-brand"><img src="/img/logo-no-bg.png" width="40" height="40"></a>
 
                 <div class="ms-0 d-flex align-items-center order-md-3">

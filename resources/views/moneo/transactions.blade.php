@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div class="container-fluid p-5">
+<div class="container pt-5">
 
     <h1 class="mb-4">Transações</h1>
 
