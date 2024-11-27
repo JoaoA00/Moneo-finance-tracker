@@ -4,9 +4,9 @@
 
 @section('content')
 
-<div class="add-transaction-content m-5">
+<div class="m-5" >
     <h1 class="mb-4">Adicione uma Transação</h1>
-    <form action="/add-transaction" method="POST" enctype="multipart/form-data">
+    <form action="/add-transaction" method="POST" enctype="multipart/form-data" class="h-100 position relative">
         @csrf
         <div class="form-group mb-3">
             <label for="description form-label">Descrição</label>
@@ -55,7 +55,7 @@
             <label for="note" class="form-label">Notas</label>
             <input type="text" name="note" id="note" class="form-control">
         </div>
-        <button type="submit" class="btn btn-primary mt-3">Adicionar</button>
+        <button type="submit" class="btn btn-primary mt-4">Adicionar</button>
     </form>
 </div>
 

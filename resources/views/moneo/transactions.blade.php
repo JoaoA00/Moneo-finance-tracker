@@ -8,7 +8,7 @@
 
     <h1 class="mb-4">Transações</h1>
 
-    <table class="table table-hover">
+    <table class="table table-hover table-bordered">
         <thead>
             <tr class="table-secondary">
                 <th scope="col" class="col-lg-1">Data</th>
@@ -43,7 +43,7 @@
 
     
 
-    <a href="/add-transaction" class="btn btn-primary">Adicionar Transação</a>
+    <a href="/add-transaction" class="btn btn-primary mt-md-4">Adicionar Transação</a>
 
 </div>
 
