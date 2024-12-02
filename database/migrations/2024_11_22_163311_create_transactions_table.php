@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->dateTime('date');
             $table->text('description');
             $table->decimal('value', 10, 2);

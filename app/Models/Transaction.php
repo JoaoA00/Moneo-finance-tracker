@@ -17,5 +17,13 @@ class Transaction extends Model
         'category', 
         'proof', 
         'note',
+        'user_id',
     ];
+
+    public function user(){
+
+        return $this->belongsTo(User::class);
+
+    }
+
 }

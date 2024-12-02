@@ -37,6 +37,8 @@ class TransactionsController extends Controller
 
         }
 
+        $validatedData['user_id'] = auth()->id();
+
         Transaction::create($validatedData);
 
         return redirect('/transactions')->with('success', 'Transação adicionada');
